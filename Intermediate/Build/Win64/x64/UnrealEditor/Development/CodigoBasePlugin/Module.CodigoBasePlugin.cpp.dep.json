@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\codigobase\\plugins\\codigobaseplugin\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\codigobaseplugin\\module.codigobaseplugin.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\codigobase\\intermediate\\build\\win64\\x64\\codigobaseeditor\\development\\unrealed\\sharedpch.unrealed.cpp20.h.pch",
+        "Includes": [
+            "d:\\codigobase\\plugins\\codigobaseplugin\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\codigobaseplugin\\definitions.codigobaseplugin.h",
+            "d:\\codigobase\\plugins\\codigobaseplugin\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\codigobaseplugin\\permoduleinline.gen.cpp",
+            "c:\\program files\\epic games\\ue_5.8\\engine\\source\\runtime\\core\\public\\hal\\permoduleinline.inl"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

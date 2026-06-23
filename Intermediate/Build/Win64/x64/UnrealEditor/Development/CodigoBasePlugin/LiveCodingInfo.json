@@ -1,0 +1,9 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.CodigoBasePlugin.cpp.obj": [
+			"PerModuleInline.gen.cpp.obj",
+			"CodigoBasePlugin.cpp.obj"
+		]
+	}
+}
