@@ -1,0 +1,15 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/experimental:deterministic
+/DEF
+/NAME:"UnrealEditor-CodigoBasePlugin.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:/CodigoBase/Intermediate/Build/Win64/x64/CodigoBaseEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h.obj"
+"D:/CodigoBase/Plugins/CodigoBasePlugin/Intermediate/Build/Win64/x64/UnrealEditor/Development/CodigoBasePlugin/Module.CodigoBasePlugin.cpp.obj"
+"D:/CodigoBase/Plugins/CodigoBasePlugin/Intermediate/Build/Win64/x64/UnrealEditor/Development/CodigoBasePlugin/CodigoBasePlugin.cpp.obj"
+"D:/CodigoBase/Plugins/CodigoBasePlugin/Intermediate/Build/Win64/x64/UnrealEditor/Development/CodigoBasePlugin/BaseCharacter.cpp.obj"
+"D:/CodigoBase/Plugins/CodigoBasePlugin/Intermediate/Build/Win64/x64/UnrealEditor/Development/CodigoBasePlugin/BasePlayableCharacter.cpp.obj"
+/OUT:"D:/CodigoBase/Plugins/CodigoBasePlugin/Intermediate/Build/Win64/x64/UnrealEditor/Development/CodigoBasePlugin/UnrealEditor-CodigoBasePlugin.lib"

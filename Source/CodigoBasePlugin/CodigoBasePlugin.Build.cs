@@ -4,7 +4,7 @@ using UnrealBuildTool;
 
 public class CodigoBasePlugin : ModuleRules
 {
-	public CodigoBasePlugin(ReadOnlyTargetRules Target) : base(Target)
+	public CodigoBasePlugin(ReadOnlyTargetRules target) : base(target)
 	{
 		PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
 		
@@ -26,6 +26,9 @@ public class CodigoBasePlugin : ModuleRules
 			new string[]
 			{
 				"Core",
+				"GameplayAbilities",
+				"GameplayTags",
+				"GameplayTasks"
 				// ... add other public dependencies that you statically link with here ...
 			}
 			);
@@ -38,6 +41,7 @@ public class CodigoBasePlugin : ModuleRules
 				"Engine",
 				"Slate",
 				"SlateCore",
+				"EnhancedInput"
 				// ... add private dependencies that you statically link with here ...	
 			}
 			);

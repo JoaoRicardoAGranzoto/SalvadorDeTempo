@@ -2,7 +2,14 @@
 	"RemapUnityFiles": 
 	{
 		"Module.CodigoBasePlugin.cpp.obj": [
+			"BaseCharacter.gen.cpp.obj",
+			"BasePlayableCharacter.gen.cpp.obj",
+			"BasePlayerController.gen.cpp.obj",
+			"CodigoBasePlugin.init.gen.cpp.obj",
 			"PerModuleInline.gen.cpp.obj",
+			"BaseCharacter.cpp.obj",
+			"BasePlayableCharacter.cpp.obj",
+			"BasePlayerController.cpp.obj",
 			"CodigoBasePlugin.cpp.obj"
 		]
 	}
