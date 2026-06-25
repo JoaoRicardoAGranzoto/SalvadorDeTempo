@@ -12,7 +12,8 @@
 			"BaseCharacter.cpp.obj",
 			"BasePlayableCharacter.cpp.obj",
 			"BasePlayerController.cpp.obj",
-			"CodigoBasePlugin.cpp.obj"
+			"CodigoBasePlugin.cpp.obj",
+			"BaseTags.cpp.obj"
 		]
 	}
 }
