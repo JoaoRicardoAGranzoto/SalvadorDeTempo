@@ -12,4 +12,5 @@
 "D:/CodigoBase/Plugins/CodigoBasePlugin/Intermediate/Build/Win64/x64/UnrealEditor/Development/CodigoBasePlugin/CodigoBasePlugin.cpp.obj"
 "D:/CodigoBase/Plugins/CodigoBasePlugin/Intermediate/Build/Win64/x64/UnrealEditor/Development/CodigoBasePlugin/BaseCharacter.cpp.obj"
 "D:/CodigoBase/Plugins/CodigoBasePlugin/Intermediate/Build/Win64/x64/UnrealEditor/Development/CodigoBasePlugin/BasePlayableCharacter.cpp.obj"
+"D:/CodigoBase/Plugins/CodigoBasePlugin/Intermediate/Build/Win64/x64/UnrealEditor/Development/CodigoBasePlugin/BasePlayerController.cpp.obj"
 /OUT:"D:/CodigoBase/Plugins/CodigoBasePlugin/Intermediate/Build/Win64/x64/UnrealEditor/Development/CodigoBasePlugin/UnrealEditor-CodigoBasePlugin.lib"
