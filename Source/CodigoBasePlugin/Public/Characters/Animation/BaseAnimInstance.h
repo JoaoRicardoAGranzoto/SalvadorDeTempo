@@ -31,6 +31,4 @@ protected:
 	
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
 	TObjectPtr<class UCharacterMovementComponent> Movement;
-	
-	
 };

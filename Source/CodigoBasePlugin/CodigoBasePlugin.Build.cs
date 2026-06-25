@@ -41,7 +41,8 @@ public class CodigoBasePlugin : ModuleRules
 				"Engine",
 				"Slate",
 				"SlateCore",
-				"EnhancedInput"
+				"EnhancedInput",
+				"GameplayTags",
 				// ... add private dependencies that you statically link with here ...	
 			}
 			);
