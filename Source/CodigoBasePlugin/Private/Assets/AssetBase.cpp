@@ -1,7 +1,6 @@
 // Copyright Joao Ricardo.
 
 #include "Assets/AssetBase.h"
-
 #include "Components/SphereComponent.h"
 
 AAssetBase::AAssetBase()
@@ -20,6 +19,7 @@ void AAssetBase::BeginPlay()
 
 
 
+	
 	this->OverlapSphere->OnComponentBeginOverlap.AddDynamic(this, &AAssetBase::Overlap);
 	this->OverlapSphere->OnComponentEndOverlap.AddDynamic(this, &AAssetBase::EndOverlap);
 
