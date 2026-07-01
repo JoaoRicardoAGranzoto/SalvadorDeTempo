@@ -9,4 +9,10 @@ UBaseAttributeSet::UBaseAttributeSet()
 	
 	MaxHealth.SetBaseValue(100.f);
 	MaxHealth.SetCurrentValue(100.f);
+	
+	Stamina.SetBaseValue(100.f);
+	Stamina.SetCurrentValue(100.f);
+	
+	MaxStamina.SetBaseValue(100.f);
+	MaxStamina.SetCurrentValue(100.f);
 }
