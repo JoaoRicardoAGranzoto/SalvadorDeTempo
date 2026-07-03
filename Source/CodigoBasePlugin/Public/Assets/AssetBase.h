@@ -23,6 +23,9 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AssetInteraction")
 	TObjectPtr<class USphereComponent> OverlapSphere;
 	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AssetInteraction")
+	TObjectPtr<class UStaticMeshComponent> MeshBase;
+	
 	UFUNCTION()
 	virtual void Overlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
 	
