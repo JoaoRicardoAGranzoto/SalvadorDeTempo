@@ -75,3 +75,8 @@ void ABasePlayerController::Sprint()
 		GetCharacter()->GetCharacterMovement()->MaxWalkSpeed=230.f;
 	}
 }
+
+void ABasePlayerController::Primary()
+{
+	
+}

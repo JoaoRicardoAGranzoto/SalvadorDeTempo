@@ -6,12 +6,20 @@
 
 AFireWeaponBase::AFireWeaponBase()
 {
+}
+
+void AFireWeaponBase::Shoot()
+{
 	if (!(GetWorld() || ProjectileClass)) return;
 	
 	FVector SpawnLocation=GetActorLocation()+GetActorForwardVector();
 	FRotator Rotation=GetActorRotation();
 		
 	FActorSpawnParameters SpawnParams;
+	
+	
+	
+	
 	SpawnParams.SpawnCollisionHandlingOverride=ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
 	
 	GetWorld()->SpawnActor<ABulletBase>(SpawnParams);

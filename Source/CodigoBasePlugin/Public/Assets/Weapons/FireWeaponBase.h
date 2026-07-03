@@ -22,6 +22,4 @@ public:
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Bullet")
 	TSubclassOf<class ABulletBase> ProjectileClass;
-	
-	
 };

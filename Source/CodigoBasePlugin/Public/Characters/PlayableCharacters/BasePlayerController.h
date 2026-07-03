@@ -34,10 +34,14 @@ protected:
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Input")
 	TObjectPtr<class UInputAction> SprintAction;
 	
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Input")
+	TObjectPtr<class UInputAction> PrimaryAction;
+	
 	void Move(const struct FInputActionValue& Value);
 	void Look(const struct FInputActionValue& Value);
 	void Jump();
 	void Sprint();
+	void Primary();
 	
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Character|State")
 	FGameplayTagContainer BaseTags;
