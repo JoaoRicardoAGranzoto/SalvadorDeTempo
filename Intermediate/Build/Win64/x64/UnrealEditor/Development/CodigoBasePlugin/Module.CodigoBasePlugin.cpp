@@ -7,6 +7,8 @@
 #include "D:/CodigoBase/Plugins/CodigoBasePlugin/Intermediate/Build/Win64/UnrealEditor/Inc/CodigoBasePlugin/UHT/BasePlayableCharacter.gen.cpp"
 #include "D:/CodigoBase/Plugins/CodigoBasePlugin/Intermediate/Build/Win64/UnrealEditor/Inc/CodigoBasePlugin/UHT/BasePlayablePlayerState.gen.cpp"
 #include "D:/CodigoBase/Plugins/CodigoBasePlugin/Intermediate/Build/Win64/UnrealEditor/Inc/CodigoBasePlugin/UHT/BasePlayerController.gen.cpp"
+#include "D:/CodigoBase/Plugins/CodigoBasePlugin/Intermediate/Build/Win64/UnrealEditor/Inc/CodigoBasePlugin/UHT/BulletBase.gen.cpp"
 #include "D:/CodigoBase/Plugins/CodigoBasePlugin/Intermediate/Build/Win64/UnrealEditor/Inc/CodigoBasePlugin/UHT/CodigoBasePlugin.init.gen.cpp"
+#include "D:/CodigoBase/Plugins/CodigoBasePlugin/Intermediate/Build/Win64/UnrealEditor/Inc/CodigoBasePlugin/UHT/FireWeaponBase.gen.cpp"
 #include "D:/CodigoBase/Plugins/CodigoBasePlugin/Intermediate/Build/Win64/UnrealEditor/Inc/CodigoBasePlugin/UHT/HealthAsset.gen.cpp"
 #include "D:/CodigoBase/Plugins/CodigoBasePlugin/Intermediate/Build/Win64/x64/UnrealEditor/Development/CodigoBasePlugin/PerModuleInline.gen.cpp"
