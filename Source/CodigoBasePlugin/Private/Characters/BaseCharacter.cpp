@@ -7,6 +7,8 @@ ABaseCharacter::ABaseCharacter()
 {
 	PrimaryActorTick.bCanEverTick = false;
 	PrimaryActorTick.bStartWithTickEnabled=false;
+	
+	Asset=nullptr;
 }
 
 UAbilitySystemComponent* ABaseCharacter::GetAbilitySystemComponent() const

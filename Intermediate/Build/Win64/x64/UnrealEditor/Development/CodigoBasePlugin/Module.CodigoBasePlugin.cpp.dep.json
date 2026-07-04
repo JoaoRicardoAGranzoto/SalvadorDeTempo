@@ -109,10 +109,13 @@
             "d:\\codigobase\\plugins\\codigobaseplugin\\intermediate\\build\\win64\\unrealeditor\\inc\\codigobaseplugin\\uht\\codigobaseplugin.init.gen.cpp",
             "d:\\codigobase\\plugins\\codigobaseplugin\\intermediate\\build\\win64\\unrealeditor\\inc\\codigobaseplugin\\uht\\fireweaponbase.gen.cpp",
             "d:\\codigobase\\plugins\\codigobaseplugin\\source\\codigobaseplugin\\public\\assets\\weapons\\fireweaponbase.h",
+            "d:\\codigobase\\plugins\\codigobaseplugin\\source\\codigobaseplugin\\public\\interfaces\\weaponinterface.h",
+            "d:\\codigobase\\plugins\\codigobaseplugin\\intermediate\\build\\win64\\unrealeditor\\inc\\codigobaseplugin\\uht\\weaponinterface.generated.h",
             "d:\\codigobase\\plugins\\codigobaseplugin\\intermediate\\build\\win64\\unrealeditor\\inc\\codigobaseplugin\\uht\\fireweaponbase.generated.h",
             "d:\\codigobase\\plugins\\codigobaseplugin\\intermediate\\build\\win64\\unrealeditor\\inc\\codigobaseplugin\\uht\\healthasset.gen.cpp",
             "d:\\codigobase\\plugins\\codigobaseplugin\\source\\codigobaseplugin\\public\\assets\\healthasset.h",
             "d:\\codigobase\\plugins\\codigobaseplugin\\intermediate\\build\\win64\\unrealeditor\\inc\\codigobaseplugin\\uht\\healthasset.generated.h",
+            "d:\\codigobase\\plugins\\codigobaseplugin\\intermediate\\build\\win64\\unrealeditor\\inc\\codigobaseplugin\\uht\\weaponinterface.gen.cpp",
             "d:\\codigobase\\plugins\\codigobaseplugin\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\codigobaseplugin\\permoduleinline.gen.cpp",
             "c:\\program files\\epic games\\ue_5.8\\engine\\source\\runtime\\core\\public\\hal\\permoduleinline.inl"
         ],

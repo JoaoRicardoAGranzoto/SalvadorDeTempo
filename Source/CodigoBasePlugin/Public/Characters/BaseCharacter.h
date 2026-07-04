@@ -20,4 +20,10 @@ public:
 
 
 
+	FORCEINLINE	virtual TObjectPtr<class AAssetBase> GetAsset() {return Asset;}
+	FORCEINLINE	virtual void SetAsset(TObjectPtr<class AAssetBase> InAsset) {this->Asset=InAsset;}
+
+protected:
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Weapon")
+	TObjectPtr<class AAssetBase> Asset;
 };

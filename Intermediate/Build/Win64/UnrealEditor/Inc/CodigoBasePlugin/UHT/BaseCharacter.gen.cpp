@@ -19,6 +19,7 @@ GAMEPLAYABILITIES_API UClass* Z_Construct_UClass_IAbilitySystemInterface(ETypeCo
 // ********** Begin Same Module References *********************************************************
 UPackage* Z_Construct_UPackage__Script_CodigoBasePlugin(ETypeConstructPhase);
 CODIGOBASEPLUGIN_API UClass* Z_Construct_UClass_ABaseCharacter(ETypeConstructPhase);
+CODIGOBASEPLUGIN_API UClass* Z_Construct_UClass_AAssetBase(ETypeConstructPhase);
 CODIGOBASEPLUGIN_API UClass* Z_Construct_UClass_ABaseCharacter(ETypeConstructPhase);
 // ********** End Same Module References ***********************************************************
 #define UHT_STRUCT_BASE(INIT) UE::CodeGen::ConstInit::TCompiledInObjectPtr<const FStructBaseChain>(UE::Private::AsStructBaseChain(INIT))
@@ -36,9 +37,15 @@ struct UHT_STATICS
 		{ "IncludePath", "Characters/BaseCharacter.h" },
 		{ "ModuleRelativePath", "Public/Characters/BaseCharacter.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Asset_MetaData[] = {
+		{ "Category", "Weapon" },
+		{ "ModuleRelativePath", "Public/Characters/BaseCharacter.h" },
+	};
 #endif // WITH_METADATA
 
 // ********** Begin Class ABaseCharacter constinit property declarations ***************************
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_Asset;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 // ********** End Class ABaseCharacter constinit property declarations *****************************
 	static FTypeConstructFunc* DependentSingletons[];
 	static const UECodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
@@ -47,6 +54,14 @@ struct UHT_STATICS
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 }; // struct UHT_STATICS
+
+// ********** Begin Class ABaseCharacter Property Definitions **************************************
+const UECodeGen_Private::FObjectPropertyParams UHT_STATICS::NewProp_Asset = { "Asset", nullptr, (EPropertyFlags)0x0124080000000015, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseCharacter, Asset), Z_Construct_UClass_AAssetBase, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Asset_MetaData), NewProp_Asset_MetaData) };
+const UECodeGen_Private::FPropertyParamsBase* const UHT_STATICS::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&UHT_STATICS::NewProp_Asset,
+};
+static_assert(UE_ARRAY_COUNT(UHT_STATICS::PropPointers) < 2048);
+// ********** End Class ABaseCharacter Property Definitions ****************************************
 FTypeConstructFunc* UHT_STATICS::DependentSingletons[] = {
 	(FTypeConstructFunc*)Z_Construct_UClass_ACharacter,
 	(FTypeConstructFunc*)Z_Construct_UPackage__Script_CodigoBasePlugin,
@@ -61,11 +76,11 @@ const UECodeGen_Private::FClassParams UHT_STATICS::ClassParams = {
 	&StaticCppClassTypeInfo,
 	DependentSingletons,
 	nullptr,
-	nullptr,
+	UHT_STATICS::PropPointers,
 	InterfaceParams,
 	UE_ARRAY_COUNT(DependentSingletons),
 	0,
-	0,
+	UE_ARRAY_COUNT(UHT_STATICS::PropPointers),
 	UE_ARRAY_COUNT(InterfaceParams),
 	0x009000A5u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(UHT_STATICS::Type_MetaData), UHT_STATICS::Type_MetaData)
@@ -116,10 +131,10 @@ ABaseCharacter::~ABaseCharacter() {}
 struct UHT_STATICS
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ABaseCharacter, TEXT("ABaseCharacter"), &Z_Registration_Info_UClass_ABaseCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABaseCharacter), 2382603688U) },
+		{ Z_Construct_UClass_ABaseCharacter, TEXT("ABaseCharacter"), &Z_Registration_Info_UClass_ABaseCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABaseCharacter), 4057337507U) },
 	};
 }; // UHT_STATICS 
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_CodigoBase_Plugins_CodigoBasePlugin_Source_CodigoBasePlugin_Public_Characters_BaseCharacter_h__Script_CodigoBasePlugin_479a1a1e33eaadaeec955dfcefeb1078827d8775{
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_CodigoBase_Plugins_CodigoBasePlugin_Source_CodigoBasePlugin_Public_Characters_BaseCharacter_h__Script_CodigoBasePlugin_432c677400bb1e3c9222d064593ea362705e7d95{
 	TEXT("/Script/CodigoBasePlugin"),
 	UHT_STATICS::ClassInfo, UE_ARRAY_COUNT(UHT_STATICS::ClassInfo),
 	nullptr, 0,

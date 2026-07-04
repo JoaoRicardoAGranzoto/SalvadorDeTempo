@@ -22,6 +22,7 @@ ENHANCEDINPUT_API UClass* Z_Construct_UClass_UInputMappingContext(ETypeConstruct
 // ********** Begin Same Module References *********************************************************
 UPackage* Z_Construct_UPackage__Script_CodigoBasePlugin(ETypeConstructPhase);
 CODIGOBASEPLUGIN_API UClass* Z_Construct_UClass_ABasePlayerController(ETypeConstructPhase);
+CODIGOBASEPLUGIN_API UClass* Z_Construct_UClass_ABasePlayableCharacter(ETypeConstructPhase);
 CODIGOBASEPLUGIN_API UClass* Z_Construct_UClass_ABasePlayerController(ETypeConstructPhase);
 // ********** End Same Module References ***********************************************************
 #define UHT_STRUCT_BASE(INIT) UE::CodeGen::ConstInit::TCompiledInObjectPtr<const FStructBaseChain>(UE::Private::AsStructBaseChain(INIT))
@@ -59,8 +60,16 @@ struct UHT_STATICS
 		{ "Category", "Input" },
 		{ "ModuleRelativePath", "Public/Characters/PlayableCharacters/BasePlayerController.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PrimaryAction_MetaData[] = {
+		{ "Category", "Input" },
+		{ "ModuleRelativePath", "Public/Characters/PlayableCharacters/BasePlayerController.h" },
+	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_BaseTags_MetaData[] = {
 		{ "Category", "Character|State" },
+		{ "ModuleRelativePath", "Public/Characters/PlayableCharacters/BasePlayerController.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_BasePlayer_MetaData[] = {
+		{ "Category", "Character" },
 		{ "ModuleRelativePath", "Public/Characters/PlayableCharacters/BasePlayerController.h" },
 	};
 #endif // WITH_METADATA
@@ -72,7 +81,9 @@ struct UHT_STATICS
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_LookAction;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_JumpAction;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_SprintAction;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_PrimaryAction;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_BaseTags;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_BasePlayer;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 // ********** End Class ABasePlayerController constinit property declarations **********************
 	static FTypeConstructFunc* DependentSingletons[];
@@ -89,7 +100,9 @@ const UECodeGen_Private::FObjectPropertyParams UHT_STATICS::NewProp_MoveAction =
 const UECodeGen_Private::FObjectPropertyParams UHT_STATICS::NewProp_LookAction = { "LookAction", nullptr, (EPropertyFlags)0x0124080000010005, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, nullptr, nullptr, 1, STRUCT_OFFSET(ABasePlayerController, LookAction), Z_Construct_UClass_UInputAction, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_LookAction_MetaData), NewProp_LookAction_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams UHT_STATICS::NewProp_JumpAction = { "JumpAction", nullptr, (EPropertyFlags)0x0124080000010005, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, nullptr, nullptr, 1, STRUCT_OFFSET(ABasePlayerController, JumpAction), Z_Construct_UClass_UInputAction, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_JumpAction_MetaData), NewProp_JumpAction_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams UHT_STATICS::NewProp_SprintAction = { "SprintAction", nullptr, (EPropertyFlags)0x0124080000010005, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, nullptr, nullptr, 1, STRUCT_OFFSET(ABasePlayerController, SprintAction), Z_Construct_UClass_UInputAction, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SprintAction_MetaData), NewProp_SprintAction_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams UHT_STATICS::NewProp_PrimaryAction = { "PrimaryAction", nullptr, (EPropertyFlags)0x0124080000010005, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, nullptr, nullptr, 1, STRUCT_OFFSET(ABasePlayerController, PrimaryAction), Z_Construct_UClass_UInputAction, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PrimaryAction_MetaData), NewProp_PrimaryAction_MetaData) };
 const UECodeGen_Private::FStructPropertyParams UHT_STATICS::NewProp_BaseTags = { "BaseTags", nullptr, (EPropertyFlags)0x0020080000010005, UECodeGen_Private::EPropertyGenFlags::Struct, nullptr, nullptr, 1, STRUCT_OFFSET(ABasePlayerController, BaseTags), Z_Construct_UScriptStruct_FGameplayTagContainer, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_BaseTags_MetaData), NewProp_BaseTags_MetaData) }; // 93faf2d4041600295d23f175e0992095f880d07b
+const UECodeGen_Private::FObjectPropertyParams UHT_STATICS::NewProp_BasePlayer = { "BasePlayer", nullptr, (EPropertyFlags)0x0124080000010005, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, nullptr, nullptr, 1, STRUCT_OFFSET(ABasePlayerController, BasePlayer), Z_Construct_UClass_ABasePlayableCharacter, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_BasePlayer_MetaData), NewProp_BasePlayer_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const UHT_STATICS::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&UHT_STATICS::NewProp_MappingContexts_Inner,
 	(const UECodeGen_Private::FPropertyParamsBase*)&UHT_STATICS::NewProp_MappingContexts,
@@ -97,7 +110,9 @@ const UECodeGen_Private::FPropertyParamsBase* const UHT_STATICS::PropPointers[] 
 	(const UECodeGen_Private::FPropertyParamsBase*)&UHT_STATICS::NewProp_LookAction,
 	(const UECodeGen_Private::FPropertyParamsBase*)&UHT_STATICS::NewProp_JumpAction,
 	(const UECodeGen_Private::FPropertyParamsBase*)&UHT_STATICS::NewProp_SprintAction,
+	(const UECodeGen_Private::FPropertyParamsBase*)&UHT_STATICS::NewProp_PrimaryAction,
 	(const UECodeGen_Private::FPropertyParamsBase*)&UHT_STATICS::NewProp_BaseTags,
+	(const UECodeGen_Private::FPropertyParamsBase*)&UHT_STATICS::NewProp_BasePlayer,
 };
 static_assert(UE_ARRAY_COUNT(UHT_STATICS::PropPointers) < 2048);
 // ********** End Class ABasePlayerController Property Definitions *********************************
@@ -168,10 +183,10 @@ ABasePlayerController::~ABasePlayerController() {}
 struct UHT_STATICS
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ABasePlayerController, TEXT("ABasePlayerController"), &Z_Registration_Info_UClass_ABasePlayerController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABasePlayerController), 790705867U) },
+		{ Z_Construct_UClass_ABasePlayerController, TEXT("ABasePlayerController"), &Z_Registration_Info_UClass_ABasePlayerController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABasePlayerController), 547868577U) },
 	};
 }; // UHT_STATICS 
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_CodigoBase_Plugins_CodigoBasePlugin_Source_CodigoBasePlugin_Public_Characters_PlayableCharacters_BasePlayerController_h__Script_CodigoBasePlugin_f56314aece0639d7d1a8b2d56415005a6cb86e37{
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_CodigoBase_Plugins_CodigoBasePlugin_Source_CodigoBasePlugin_Public_Characters_PlayableCharacters_BasePlayerController_h__Script_CodigoBasePlugin_932a05c27ec9fc7f57fd7c8702ebffdea5247e31{
 	TEXT("/Script/CodigoBasePlugin"),
 	UHT_STATICS::ClassInfo, UE_ARRAY_COUNT(UHT_STATICS::ClassInfo),
 	nullptr, 0,

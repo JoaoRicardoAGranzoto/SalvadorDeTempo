@@ -1,6 +1,8 @@
 // Copyright Joao Ricardo.
 
 #include "Assets/AssetBase.h"
+
+#include "Characters/PlayableCharacters/BasePlayableCharacter.h"
 #include "Components/SphereComponent.h"
 #include "Components/StaticMeshComponent.h"
 #include "Engine/StaticMesh.h"
@@ -30,10 +32,20 @@ void AAssetBase::BeginPlay()
 
 void AAssetBase::Overlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
+	ABasePlayableCharacter* BasePlayer=Cast<ABasePlayableCharacter>(OtherActor);
 	
+	if (BasePlayer && !BasePlayer->GetAsset())
+	{
+		BasePlayer->SetAsset(this);
+	}
 }
 
 void AAssetBase::EndOverlap(UPrimitiveComponent* OverlappedComponent,AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
+	ABasePlayableCharacter* BasePlayer=Cast<ABasePlayableCharacter>(OtherActor);
 	
+	if (BasePlayer && !BasePlayer->GetAsset())
+	{
+		BasePlayer->SetAsset(nullptr);
+	}
 }

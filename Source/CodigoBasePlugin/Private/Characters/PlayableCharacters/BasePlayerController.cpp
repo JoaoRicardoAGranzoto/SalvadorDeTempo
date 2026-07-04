@@ -3,9 +3,12 @@
 #include "Characters/PlayableCharacters/BasePlayerController.h"
 #include "EnhancedInputComponent.h"
 #include "EnhancedInputSubsystems.h"
+#include "Assets/AssetBase.h"
+#include "Characters/PlayableCharacters/BasePlayableCharacter.h"
 #include "Engine/LocalPlayer.h"
 #include "GameFramework/Character.h"
 #include "GameFramework/CharacterMovementComponent.h"
+#include "Interfaces/WeaponInterface.h"
 #include "Tags/BaseTags.h"
 
 void ABasePlayerController::SetupInputComponent()
@@ -30,6 +33,7 @@ void ABasePlayerController::SetupInputComponent()
 		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &ABasePlayerController::Look);
 		EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Triggered, this, &ABasePlayerController::Jump);
 		EnhancedInputComponent->BindAction(SprintAction, ETriggerEvent::Started, this, &ABasePlayerController::Sprint);
+		EnhancedInputComponent->BindAction(PrimaryAction, ETriggerEvent::Triggered, this, &ABasePlayerController::Primary);
 	}
 }
 
@@ -78,5 +82,10 @@ void ABasePlayerController::Sprint()
 
 void ABasePlayerController::Primary()
 {
+	if (BasePlayer->GetAsset()->Implements<UWeaponInterface>())
+	{
+		IWeaponInterface::Execute_Shoot(BasePlayer->GetAsset());
+	}
 	
+	UE_LOG(LogTemp, Warning, TEXT("Input is working"))
 }

@@ -136,10 +136,10 @@ ABasePlayableCharacter::~ABasePlayableCharacter() {}
 struct UHT_STATICS
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ABasePlayableCharacter, TEXT("ABasePlayableCharacter"), &Z_Registration_Info_UClass_ABasePlayableCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABasePlayableCharacter), 1319259010U) },
+		{ Z_Construct_UClass_ABasePlayableCharacter, TEXT("ABasePlayableCharacter"), &Z_Registration_Info_UClass_ABasePlayableCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABasePlayableCharacter), 1591936301U) },
 	};
 }; // UHT_STATICS 
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_CodigoBase_Plugins_CodigoBasePlugin_Source_CodigoBasePlugin_Public_Characters_PlayableCharacters_BasePlayableCharacter_h__Script_CodigoBasePlugin_4789e1f6e0579b8927a11365ba2a78edbb32f33a{
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_CodigoBase_Plugins_CodigoBasePlugin_Source_CodigoBasePlugin_Public_Characters_PlayableCharacters_BasePlayableCharacter_h__Script_CodigoBasePlugin_96f953a8102ba2e4c878b1cf73a5d7722cb068e2{
 	TEXT("/Script/CodigoBasePlugin"),
 	UHT_STATICS::ClassInfo, UE_ARRAY_COUNT(UHT_STATICS::ClassInfo),
 	nullptr, 0,

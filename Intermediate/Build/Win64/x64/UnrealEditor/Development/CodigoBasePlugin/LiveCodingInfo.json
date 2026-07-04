@@ -14,6 +14,7 @@
 			"CodigoBasePlugin.init.gen.cpp.obj",
 			"FireWeaponBase.gen.cpp.obj",
 			"HealthAsset.gen.cpp.obj",
+			"WeaponInterface.gen.cpp.obj",
 			"PerModuleInline.gen.cpp.obj",
 			"AssetBase.cpp.obj",
 			"BaseDoor.cpp.obj",
@@ -27,6 +28,7 @@
 			"BasePlayerController.cpp.obj",
 			"CodigoBasePlugin.cpp.obj",
 			"BaseAttributeSet.cpp.obj",
+			"WeaponInterface.cpp.obj",
 			"BaseTags.cpp.obj"
 		]
 	}

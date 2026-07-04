@@ -8,11 +8,11 @@ AFireWeaponBase::AFireWeaponBase()
 {
 }
 
-void AFireWeaponBase::Shoot()
+void AFireWeaponBase::Shoot_Implementation()
 {
 	if (!(GetWorld() || ProjectileClass)) return;
 	
-	FVector SpawnLocation=GetActorLocation()+GetActorForwardVector();
+	FVector SpawnLocation=GetActorLocation() + GetActorForwardVector();
 	FRotator Rotation=GetActorRotation();
 		
 	FActorSpawnParameters SpawnParams;

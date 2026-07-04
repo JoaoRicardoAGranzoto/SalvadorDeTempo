@@ -45,4 +45,7 @@ protected:
 	
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Character|State")
 	FGameplayTagContainer BaseTags;
+	
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Character")
+	TObjectPtr<class ABasePlayableCharacter> BasePlayer;
 };
