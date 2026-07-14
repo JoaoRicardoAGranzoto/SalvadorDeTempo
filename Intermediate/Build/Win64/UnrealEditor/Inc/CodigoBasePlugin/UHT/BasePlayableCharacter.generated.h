@@ -21,7 +21,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 struct Z_Construct_UClass_ABasePlayableCharacter_Statics;
 CODIGOBASEPLUGIN_API UClass* Z_Construct_UClass_ABasePlayableCharacter(ETypeConstructPhase);
 
-#define FID_CodigoBase_Plugins_CodigoBasePlugin_Source_CodigoBasePlugin_Public_Characters_PlayableCharacters_BasePlayableCharacter_h_12_INCLASS_NO_PURE_DECLS \
+#define FID_CodigoBase_Plugins_SalvadorDeTempo_Source_CodigoBasePlugin_Public_Characters_PlayableCharacters_BasePlayableCharacter_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	friend struct ::Z_Construct_UClass_ABasePlayableCharacter_Statics; \
 	friend CODIGOBASEPLUGIN_API UClass* ::Z_Construct_UClass_ABasePlayableCharacter(ETypeConstructPhase); \
@@ -30,7 +30,7 @@ public: \
 	DECLARE_SERIALIZER(ABasePlayableCharacter)
 
 
-#define FID_CodigoBase_Plugins_CodigoBasePlugin_Source_CodigoBasePlugin_Public_Characters_PlayableCharacters_BasePlayableCharacter_h_12_ENHANCED_CONSTRUCTORS \
+#define FID_CodigoBase_Plugins_SalvadorDeTempo_Source_CodigoBasePlugin_Public_Characters_PlayableCharacters_BasePlayableCharacter_h_12_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	ABasePlayableCharacter(ABasePlayableCharacter&&) = delete; \
 	ABasePlayableCharacter(const ABasePlayableCharacter&) = delete; \
@@ -40,12 +40,12 @@ public: \
 	NO_API virtual ~ABasePlayableCharacter();
 
 
-#define FID_CodigoBase_Plugins_CodigoBasePlugin_Source_CodigoBasePlugin_Public_Characters_PlayableCharacters_BasePlayableCharacter_h_9_PROLOG
-#define FID_CodigoBase_Plugins_CodigoBasePlugin_Source_CodigoBasePlugin_Public_Characters_PlayableCharacters_BasePlayableCharacter_h_12_GENERATED_BODY \
+#define FID_CodigoBase_Plugins_SalvadorDeTempo_Source_CodigoBasePlugin_Public_Characters_PlayableCharacters_BasePlayableCharacter_h_9_PROLOG
+#define FID_CodigoBase_Plugins_SalvadorDeTempo_Source_CodigoBasePlugin_Public_Characters_PlayableCharacters_BasePlayableCharacter_h_12_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_CodigoBase_Plugins_CodigoBasePlugin_Source_CodigoBasePlugin_Public_Characters_PlayableCharacters_BasePlayableCharacter_h_12_INCLASS_NO_PURE_DECLS \
-	FID_CodigoBase_Plugins_CodigoBasePlugin_Source_CodigoBasePlugin_Public_Characters_PlayableCharacters_BasePlayableCharacter_h_12_ENHANCED_CONSTRUCTORS \
+	FID_CodigoBase_Plugins_SalvadorDeTempo_Source_CodigoBasePlugin_Public_Characters_PlayableCharacters_BasePlayableCharacter_h_12_INCLASS_NO_PURE_DECLS \
+	FID_CodigoBase_Plugins_SalvadorDeTempo_Source_CodigoBasePlugin_Public_Characters_PlayableCharacters_BasePlayableCharacter_h_12_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -55,6 +55,6 @@ class ABasePlayableCharacter;
 // ********** End Class ABasePlayableCharacter *****************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_CodigoBase_Plugins_CodigoBasePlugin_Source_CodigoBasePlugin_Public_Characters_PlayableCharacters_BasePlayableCharacter_h
+#define CURRENT_FILE_ID FID_CodigoBase_Plugins_SalvadorDeTempo_Source_CodigoBasePlugin_Public_Characters_PlayableCharacters_BasePlayableCharacter_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

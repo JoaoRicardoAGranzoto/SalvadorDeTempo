@@ -1,7 +1,6 @@
 // Copyright Joao Ricardo.
 
 #include "Characters/BaseCharacter.h"
-#include "Characters/PlayableCharacters/BasePlayablePlayerState.h"
 
 ABaseCharacter::ABaseCharacter()
 {
@@ -9,9 +8,4 @@ ABaseCharacter::ABaseCharacter()
 	PrimaryActorTick.bStartWithTickEnabled=false;
 	
 	Asset=nullptr;
-}
-
-UAbilitySystemComponent* ABaseCharacter::GetAbilitySystemComponent() const
-{
-	return CastChecked<ABasePlayablePlayerState>(GetPlayerState())->GetAbilitySystemComponent();
 }

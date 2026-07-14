@@ -13,7 +13,6 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacter() {}
 
 // ********** Begin Cross Module References ********************************************************
 ENGINE_API UClass* Z_Construct_UClass_ACharacter(ETypeConstructPhase);
-GAMEPLAYABILITIES_API UClass* Z_Construct_UClass_IAbilitySystemInterface(ETypeConstructPhase);
 // ********** End Cross Module References **********************************************************
 
 // ********** Begin Same Module References *********************************************************
@@ -48,7 +47,6 @@ struct UHT_STATICS
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 // ********** End Class ABaseCharacter constinit property declarations *****************************
 	static FTypeConstructFunc* DependentSingletons[];
-	static const UECodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ABaseCharacter>::IsAbstract,
 	};
@@ -67,9 +65,6 @@ FTypeConstructFunc* UHT_STATICS::DependentSingletons[] = {
 	(FTypeConstructFunc*)Z_Construct_UPackage__Script_CodigoBasePlugin,
 };
 static_assert(UE_ARRAY_COUNT(UHT_STATICS::DependentSingletons) < 16);
-const UECodeGen_Private::FImplementedInterfaceParams UHT_STATICS::InterfaceParams[] = {
-	{ Z_Construct_UClass_UAbilitySystemInterface, (int32)VTABLE_OFFSET(ABaseCharacter, IAbilitySystemInterface), false },  // 5870c999b14b080ebdd62214f70112b9ca06d07d
-};
 const UECodeGen_Private::FClassParams UHT_STATICS::ClassParams = {
 	&Z_Construct_UClass_ABaseCharacter,
 	"Game",
@@ -77,11 +72,11 @@ const UECodeGen_Private::FClassParams UHT_STATICS::ClassParams = {
 	DependentSingletons,
 	nullptr,
 	UHT_STATICS::PropPointers,
-	InterfaceParams,
+	nullptr,
 	UE_ARRAY_COUNT(DependentSingletons),
 	0,
 	UE_ARRAY_COUNT(UHT_STATICS::PropPointers),
-	UE_ARRAY_COUNT(InterfaceParams),
+	0,
 	0x009000A5u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(UHT_STATICS::Type_MetaData), UHT_STATICS::Type_MetaData)
 };
@@ -127,14 +122,14 @@ ABaseCharacter::~ABaseCharacter() {}
 #ifdef UHT_STATICS
 #error UHT_STATICS already defined
 #endif
-#define UHT_STATICS Z_CompiledInDeferFile_FID_CodigoBase_Plugins_CodigoBasePlugin_Source_CodigoBasePlugin_Public_Characters_BaseCharacter_h__Script_CodigoBasePlugin_Statics
+#define UHT_STATICS Z_CompiledInDeferFile_FID_CodigoBase_Plugins_SalvadorDeTempo_Source_CodigoBasePlugin_Public_Characters_BaseCharacter_h__Script_CodigoBasePlugin_Statics
 struct UHT_STATICS
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ABaseCharacter, TEXT("ABaseCharacter"), &Z_Registration_Info_UClass_ABaseCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABaseCharacter), 4057337507U) },
+		{ Z_Construct_UClass_ABaseCharacter, TEXT("ABaseCharacter"), &Z_Registration_Info_UClass_ABaseCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABaseCharacter), 2632609826U) },
 	};
 }; // UHT_STATICS 
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_CodigoBase_Plugins_CodigoBasePlugin_Source_CodigoBasePlugin_Public_Characters_BaseCharacter_h__Script_CodigoBasePlugin_432c677400bb1e3c9222d064593ea362705e7d95{
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_CodigoBase_Plugins_SalvadorDeTempo_Source_CodigoBasePlugin_Public_Characters_BaseCharacter_h__Script_CodigoBasePlugin_a0129639742cbb5ebac2fc397dddbb38ec03f0a0{
 	TEXT("/Script/CodigoBasePlugin"),
 	UHT_STATICS::ClassInfo, UE_ARRAY_COUNT(UHT_STATICS::ClassInfo),
 	nullptr, 0,

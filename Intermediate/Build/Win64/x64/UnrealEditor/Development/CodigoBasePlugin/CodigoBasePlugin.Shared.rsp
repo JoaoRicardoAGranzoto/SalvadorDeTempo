@@ -42,7 +42,7 @@
 /wd4267
 /wd4100
 /I "."
-/I "D:/CodigoBase/Plugins/CodigoBasePlugin/Source/CodigoBasePlugin/Private"
+/I "D:/CodigoBase/Plugins/SalvadorDeTempo/Source/CodigoBasePlugin/Private"
 /I "../Intermediate/Build/Win64/UnrealEditor/Inc/CoreUObject/UHT"
 /I "../Intermediate/Build/Win64/UnrealEditor/Inc/CoreUObject/VerseVMBytecode"
 /I "Runtime/CoreUObject/Public"
@@ -342,9 +342,9 @@
 /I "../Plugins/Runtime/DataRegistry/Intermediate/Build/Win64/UnrealEditor/Inc/DataRegistry/UHT"
 /I "../Plugins/Runtime/DataRegistry/Source"
 /I "../Plugins/Runtime/DataRegistry/Source/DataRegistry/Public"
-/I "D:/CodigoBase/Plugins/CodigoBasePlugin/Intermediate/Build/Win64/UnrealEditor/Inc/CodigoBasePlugin/UHT"
-/I "D:/CodigoBase/Plugins/CodigoBasePlugin/Source"
-/I "D:/CodigoBase/Plugins/CodigoBasePlugin/Source/CodigoBasePlugin/Public"
+/I "D:/CodigoBase/Plugins/SalvadorDeTempo/Intermediate/Build/Win64/UnrealEditor/Inc/CodigoBasePlugin/UHT"
+/I "D:/CodigoBase/Plugins/SalvadorDeTempo/Source"
+/I "D:/CodigoBase/Plugins/SalvadorDeTempo/Source/CodigoBasePlugin/Public"
 /I "D:/CodigoBase/Intermediate/Build/Win64/x64/CodigoBaseEditor/Development/UnrealEd"
 /external:W0
 /external:I "ThirdParty/GuidelinesSupportLibrary/GSL-1144/include"

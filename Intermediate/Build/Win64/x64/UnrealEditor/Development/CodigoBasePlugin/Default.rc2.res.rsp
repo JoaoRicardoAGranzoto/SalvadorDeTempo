@@ -95,5 +95,5 @@
 /DBUILD_ICON_FILE_NAME="\"..\\Build\\Windows\\Resources\\Default.ico\""
 /DPROJECT_COPYRIGHT_STRING="Copyright Joao Ricardo."
 /DPROJECT_PRODUCT_IDENTIFIER=CodigoBase
-/fo "D:/CodigoBase/Plugins/CodigoBasePlugin/Intermediate/Build/Win64/x64/UnrealEditor/Development/CodigoBasePlugin/Default.rc2.res"
+/fo "D:/CodigoBase/Plugins/SalvadorDeTempo/Intermediate/Build/Win64/x64/UnrealEditor/Development/CodigoBasePlugin/Default.rc2.res"
 "../Build/Windows/Resources/Default.rc2"

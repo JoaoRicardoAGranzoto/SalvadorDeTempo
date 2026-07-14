@@ -21,7 +21,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 struct Z_Construct_UClass_ABasePlayerController_Statics;
 CODIGOBASEPLUGIN_API UClass* Z_Construct_UClass_ABasePlayerController(ETypeConstructPhase);
 
-#define FID_CodigoBase_Plugins_CodigoBasePlugin_Source_CodigoBasePlugin_Public_Characters_PlayableCharacters_BasePlayerController_h_13_INCLASS_NO_PURE_DECLS \
+#define FID_CodigoBase_Plugins_SalvadorDeTempo_Source_CodigoBasePlugin_Public_Characters_PlayableCharacters_BasePlayerController_h_13_INCLASS_NO_PURE_DECLS \
 private: \
 	friend struct ::Z_Construct_UClass_ABasePlayerController_Statics; \
 	friend CODIGOBASEPLUGIN_API UClass* ::Z_Construct_UClass_ABasePlayerController(ETypeConstructPhase); \
@@ -30,7 +30,7 @@ public: \
 	DECLARE_SERIALIZER(ABasePlayerController)
 
 
-#define FID_CodigoBase_Plugins_CodigoBasePlugin_Source_CodigoBasePlugin_Public_Characters_PlayableCharacters_BasePlayerController_h_13_ENHANCED_CONSTRUCTORS \
+#define FID_CodigoBase_Plugins_SalvadorDeTempo_Source_CodigoBasePlugin_Public_Characters_PlayableCharacters_BasePlayerController_h_13_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ABasePlayerController(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -42,12 +42,12 @@ public: \
 	NO_API virtual ~ABasePlayerController();
 
 
-#define FID_CodigoBase_Plugins_CodigoBasePlugin_Source_CodigoBasePlugin_Public_Characters_PlayableCharacters_BasePlayerController_h_10_PROLOG
-#define FID_CodigoBase_Plugins_CodigoBasePlugin_Source_CodigoBasePlugin_Public_Characters_PlayableCharacters_BasePlayerController_h_13_GENERATED_BODY \
+#define FID_CodigoBase_Plugins_SalvadorDeTempo_Source_CodigoBasePlugin_Public_Characters_PlayableCharacters_BasePlayerController_h_10_PROLOG
+#define FID_CodigoBase_Plugins_SalvadorDeTempo_Source_CodigoBasePlugin_Public_Characters_PlayableCharacters_BasePlayerController_h_13_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_CodigoBase_Plugins_CodigoBasePlugin_Source_CodigoBasePlugin_Public_Characters_PlayableCharacters_BasePlayerController_h_13_INCLASS_NO_PURE_DECLS \
-	FID_CodigoBase_Plugins_CodigoBasePlugin_Source_CodigoBasePlugin_Public_Characters_PlayableCharacters_BasePlayerController_h_13_ENHANCED_CONSTRUCTORS \
+	FID_CodigoBase_Plugins_SalvadorDeTempo_Source_CodigoBasePlugin_Public_Characters_PlayableCharacters_BasePlayerController_h_13_INCLASS_NO_PURE_DECLS \
+	FID_CodigoBase_Plugins_SalvadorDeTempo_Source_CodigoBasePlugin_Public_Characters_PlayableCharacters_BasePlayerController_h_13_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -57,6 +57,6 @@ class ABasePlayerController;
 // ********** End Class ABasePlayerController ******************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_CodigoBase_Plugins_CodigoBasePlugin_Source_CodigoBasePlugin_Public_Characters_PlayableCharacters_BasePlayerController_h
+#define CURRENT_FILE_ID FID_CodigoBase_Plugins_SalvadorDeTempo_Source_CodigoBasePlugin_Public_Characters_PlayableCharacters_BasePlayerController_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
