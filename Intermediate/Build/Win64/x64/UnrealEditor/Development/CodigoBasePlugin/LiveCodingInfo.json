@@ -13,6 +13,7 @@
 			"FireWeaponBase.gen.cpp.obj",
 			"HealthAsset.gen.cpp.obj",
 			"HealthComponent.gen.cpp.obj",
+			"StaminaComponent.gen.cpp.obj",
 			"WeaponInterface.gen.cpp.obj",
 			"PerModuleInline.gen.cpp.obj",
 			"AssetBase.cpp.obj",
@@ -26,6 +27,7 @@
 			"BasePlayerController.cpp.obj",
 			"CodigoBasePlugin.cpp.obj",
 			"HealthComponent.cpp.obj",
+			"StaminaComponent.cpp.obj",
 			"WeaponInterface.cpp.obj",
 			"BaseTags.cpp.obj"
 		]

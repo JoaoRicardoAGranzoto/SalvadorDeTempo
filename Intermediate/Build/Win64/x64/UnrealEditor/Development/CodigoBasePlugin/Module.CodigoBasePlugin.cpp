@@ -10,5 +10,6 @@
 #include "D:/CodigoBase/Plugins/SalvadorDeTempo/Intermediate/Build/Win64/UnrealEditor/Inc/CodigoBasePlugin/UHT/FireWeaponBase.gen.cpp"
 #include "D:/CodigoBase/Plugins/SalvadorDeTempo/Intermediate/Build/Win64/UnrealEditor/Inc/CodigoBasePlugin/UHT/HealthAsset.gen.cpp"
 #include "D:/CodigoBase/Plugins/SalvadorDeTempo/Intermediate/Build/Win64/UnrealEditor/Inc/CodigoBasePlugin/UHT/HealthComponent.gen.cpp"
+#include "D:/CodigoBase/Plugins/SalvadorDeTempo/Intermediate/Build/Win64/UnrealEditor/Inc/CodigoBasePlugin/UHT/StaminaComponent.gen.cpp"
 #include "D:/CodigoBase/Plugins/SalvadorDeTempo/Intermediate/Build/Win64/UnrealEditor/Inc/CodigoBasePlugin/UHT/WeaponInterface.gen.cpp"
 #include "D:/CodigoBase/Plugins/SalvadorDeTempo/Intermediate/Build/Win64/x64/UnrealEditor/Development/CodigoBasePlugin/PerModuleInline.gen.cpp"
